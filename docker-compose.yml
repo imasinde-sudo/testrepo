@@ -1,4 +1,17 @@
 services:
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+
+  etl:
+    build:
+      context: .
+    command: sh -c "python -u test_etl.py && tail -f /dev/null"
   backend:
     build:
       context: ./backend
