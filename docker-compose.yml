@@ -12,3 +12,10 @@ services:
     build:
       context: .
     command: sh -c "python -u test_etl.py && tail -f /dev/null"
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
