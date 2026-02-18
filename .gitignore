@@ -14,6 +14,7 @@ __pycache__/
 *.pyo
 *.pyd
 .ipynb_checkpoints/
+*.sqlite3
 
 # ===== DATA FILES =====
 data/
