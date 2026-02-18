@@ -1,0 +1,41 @@
+# ===== ENV =====
+.env
+.env.*
+
+# ===== VENV =====
+.venv/
+venv/
+env/
+testvenv
+
+# ===== PYTHON =====
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+*.sqlite3
+
+# ===== DATA FILES =====
+data/
+*.csv
+*.parquet
+*.xlsx
+*.json
+
+# ===== LOGS =====
+*.log
+
+# ===== IDE =====
+.vscode/
+.idea/
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+
+# ===== DOCKER =====
+docker-compose.override.yml
+
+# ===== CACHE =====
+.cache/
